@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+        "id": "grafana",
+        "name": "grafana",
+        "tags": ["http", "v3"],
+        "port": 3000,
+        "checks": [{
+            "script": "/opt/qnib/grafana/bin/healthcheck.sh",
+            "interval": "5s"
+        }]
+    }
+  ]
+}
